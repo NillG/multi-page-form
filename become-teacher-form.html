@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html>
+
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Become Teacher Form</title>
+    
+    <!-- plugin scripts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,500i,600,700,800%7CSatisfy&amp;display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/fontawesome-free-5.11.2-web/css/all.min.css">
+    <link rel="stylesheet" href="plugins/kipso-icons/style.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <!-- template styles -->
+    <link rel="stylesheet" href="css/become-teacher.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/form-actions.js"></script>
+</head>
+
+<body>
+<div class="preloader"><span></span></div><!-- /.preloader -->
+<div>
+    <div class="full-page-form">
+
+        <div>
+            <!--========================= page header ===========================-->
+            <header>
+                <div class="form-header">
+                    <img src="images/logo/music-note.png">
+                    <div class="devider"></div>
+                    <div class="step-number">step 1 of 5</div>
+                    <div class="exit-button">
+                        <button>Exit</button>
+                    </div>
+                </div>
+                <div class="page-progress-container">
+                    <div class="progress"></div>
+                </div>
+            </header>
+
+            <!--========================= first page =======================-->
+
+            <form class="form-content p-md-5">
+                <div class="row tab">
+                    <div class="col-md">
+                        <div class="row">
+                            <div class="col-md col-xl-8">
+                                <div class="form-group">
+                                    <h2>CONTACT INFORMATION</h2>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="fName">First Name*</label>
+                                        <input type="email" class="form-control" id="fName" required>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="lName">Last Name*</label>
+                                        <input type="password" class="form-control" id="lName" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="pNumber">Phone Number*</label>
+                                    <input type="text" class="form-control" id="pNumber" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="address">Address*</label>
+                                    <input type="text" class="form-control" id="address" required>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-sm-6 col-md-3">
+                                        <label for="country">Country*</label>
+                                        <input type="text" class="form-control" id="country" required>
+                                    </div>
+                                    <div class="form-group col-sm-6 col-md-3">
+                                        <label for="city">City*</label>
+                                        <input type="text" class="form-control" id="city" required>
+                                    </div>
+                                    <div class="form-group col-sm-6 col-md-3">
+                                        <label for="state">State</label>
+                                        <input type="text" id="state" class="form-control">
+                                    </div>
+                                    <div class="form-group col-sm-6 col-md-3">
+                                        <label for="zipCode">Zip</label>
+                                        <input type="text" class="form-control" id="zipCode">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-sm-6 form-group">
+                                        <label for="email">Email*</label>
+                                        <input type="text" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="col-sm-6 form-group">
+                                        <label for="available-date">Date Available*</label>
+                                        <input type="date" class="form-control" id="available-date" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <p>Have you ever been convicted of a felony?* </p>
+                                    <div class="form-row">
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" name="felony-radios" class="form-check-input" id="convicted" required>
+                                            <label class="form-check-label" for="convicted">Yes</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" name="felony-radios" class="form-check-input" id="no-convicted" required>
+                                            <label class="form-check-label" for="no-convicted">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-md col-xl-8">
+                                <div class="form-group">
+                                    <h2>Education</h2>
+                                </div>
+
+                                <div class="m-10">
+                                    Check places you have studied .
+                                </div>
+
+                                <div class="graduate-fields my-2">
+                                    <div class="card-body form-row">
+                                        <div class="form-row col-lg col-xl-10">
+                                            <div class="col-md-3 high-school-field mr-2">
+                                                <input type="checkbox" id="high-school-checkbox" onclick="enableRow(this)" required checked>
+                                                <label class="form-check-label" for="high-school-checkbox">High
+                                                    School*</label>
+                                            </div>
+                                            <div class="col-md-4 form-row high-school-field">
+                                                <label class="mr-2" for="highest-degree">Highest degree*</label>
+                                                <div style="flex: 1">
+                                                    <input class="form-control" type="text" id="highest-degree" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md form-row high-school-field">
+                                                <label class="mr-2" for="degree-type">Degree Type*</label>
+                                                <div style="flex: 1">
+                                                    <input class="form-control" type="text" id="degree-type" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="graduate-high-school">
+                                            <input type="checkbox" id="graduated-high-school">
+                                            <label class="form-check-label"
+                                                   for="graduated-high-school">graduated</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="graduate-fields my-2">
+                                    <div class="card-body form-row">
+                                        <div class="form-row col-lg col-xl-10">
+                                            <div class="col-md-3 high-school-field m2-1">
+                                                <input type="checkbox" id="conservatory-checkbox" onclick="enableRow(this)">
+                                                <label class="form-check-label"
+                                                       for="conservatory-checkbox">Conservatory</label>
+                                            </div>
+                                            <div class="col-md mb-1 form-row high-school-field">
+                                                <label class="mr-2" for="conservatory-from">from</label>
+                                                <div style="flex: 1">
+                                                    <input class="form-control" type="date" id="conservatory-from" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="col-md mb-1 form-row high-school-field">
+                                                <label class="mr-2" for="conservatory-to">to</label>
+                                                <div style="flex: 1">
+                                                    <input class="form-control" type="date" id="conservatory-to" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="graduate-high-school">
+                                            <input type="checkbox" id="graduated-conservatory" disabled>
+                                            <label class="form-check-label"
+                                                   for="graduated-conservatory">graduated</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="graduate-fields my-2">
+                                    <div class="card-body form-row">
+                                        <div class="form-row col-lg col-xl-10">
+                                            <div class="col-md-3  high-school-field m2-1">
+                                                <input type="checkbox" id="university-checkbox" onclick="enableRow(this)">
+                                                <label class="form-check-label"
+                                                       for="university-checkbox">University</label>
+                                            </div>
+                                            <div class="col-md mb-1 form-row high-school-field">
+                                                <label class="mr-2" for="university-from">from</label>
+                                                <div style="flex: 1">
+                                                    <input class="form-control" type="date" id="university-from" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="col-md mb-1 form-row high-school-field">
+                                                <label class="mr-2" for="university-to">to</label>
+                                                <div style="flex: 1">
+                                                    <input class="form-control" type="date" id="university-to" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="graduate-high-school">
+                                            <input type="checkbox" id="graduated-university" disabled>
+                                            <label class="form-check-label" for="graduated-university">graduated</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="graduate-fields my-2">
+                                    <div class="card-body form-row">
+                                        <div class="form-row col-lg col-xl-10">
+                                            <div class="col-md-3  high-school-field m2-1">
+                                                <input type="checkbox" id="college-checkbox" onclick="enableRow(this)">
+                                                <label class="form-check-label" for="college-checkbox">College</label>
+                                            </div>
+                                            <div class="col-md mb-1 form-row high-school-field">
+                                                <label class="mr-2" for="college-from">from</label>
+                                                <div style="flex: 1">
+                                                    <input class="form-control" type="date" id="college-from" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="col-md mb-1 form-row high-school-field">
+                                                <label class="mr-2" for="college-to">to</label>
+                                                <div style="flex: 1">
+                                                    <input class="form-control" type="date" id="college-to" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="graduate-high-school">
+                                            <input type="checkbox" id="graduated-college" disabled>
+                                            <label class="form-check-label" for="graduated-college">graduated</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--====================== second page ==========================-->
+                <div class="row tab">
+                    <div class="col-md col-xl-10">
+                        <div class="form-group">
+                            <h2>Teaching References</h2>
+                        </div>
+                        <div class="ml-3">
+                            <p>Please add 2 professional references. We are looking for at least 1 supervisor
+                                and 1 parent,
+                                or adult student. Name, relationship, email, phone.
+                            </p>
+                            <div class="form-row">
+                                <div class="col-sm-5 m-2 card">
+                                    <div class="card-body">
+                                        <div class="ref-number">1</div>
+                                        <div class="form-group form-row">
+                                            <label class="mr-2" for="ref1-name">Full Name*</label>
+                                            <input type="text" class="form-control" id="ref1-name">
+                                        </div>
+                                        <div class="form-group form-row">
+                                            <label class="mr-2" for="ref1-relation">Relationship*</label>
+                                            <input type="text" class="form-control" id="ref1-relation">
+                                        </div>
+                                        <div class="form-group form-row">
+                                            <label class="mr-2" for="ref1-school">School / academy</label>
+                                            <input type="text" class="form-control" id="ref1-school">
+                                        </div>
+                                        <div class="form-group form-row">
+                                            <label class="mr-2" for="ref1-number">Phone Number*</label>
+                                            <input type="text" class="form-control" id="ref1-number">
+                                        </div>
+                                        <div class="form-group form-row">
+                                            <label class="mr-2" for="ref1-email">Email*</label>
+                                            <input type="text" class="form-control" id="ref1-email">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-5 m-2 card">
+                                    <div class="card-body">
+                                        <div class="ref-number">2</div>
+                                        <div class="form-group">
+                                            <label class="mr-2" for="ref2-name">Full Name</label>
+                                            <input type="text" class="form-control" id="ref2-name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="mr-2" for="ref2-relation">Relationship</label>
+                                            <input type="text" class="form-control" id="ref2-relation">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="mr-2" for="ref2-school">School / academy</label>
+                                            <input type="text" class="form-control" id="ref2-school">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="mr-2" for="ref2-number">Phone Number*</label>
+                                            <input type="text" class="form-control" id="ref2-number">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="mr-2" for="ref2-email">Email</label>
+                                            <input type="text" class="form-control" id="ref2-email">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mt-5">
+                            <h2>Current or Previous Employment</h2>
+                        </div>
+                        <div class="ml-3">
+                            <div class="form-row">
+                                <div class="col-sm-6 col-lg-3 form-group">
+                                    <label class="mr-2" for="job-company">Company / Academy*</label>
+                                    <input type="text" class="form-control" id="job-company">
+                                </div>
+                                <div class="col-sm-6 col-lg-3 form-group">
+                                    <label class="mr-2" for="job-number">Phone Number*</label>
+                                    <input type="text" class="form-control" id="job-number">
+                                </div>
+                                <div class="col-sm-6 col-lg-3 form-group">
+                                    <label class="mr-2" for="job-address2">Address Line 1</label>
+                                    <input type="text" class="form-control" id="job-address2">
+                                </div>
+                                <div class="col-sm-6 col-lg-3 form-group">
+                                    <label class="mr-2" for="job-address1">Address Line 2</label>
+                                    <input type="text" class="form-control" id="job-address1">
+                                </div>
+                            </div>
+                            <div class="form-row mt-3">
+                                <div class="col-sm-6 col-lg-3 form-group">
+                                    <label class="mr-2" for="job-country">Country </label>
+                                    <input type="text" class="form-control" id="job-country">
+                                </div>
+                                <div class="col-sm-6 col-lg-3 form-group">
+                                    <label class="mr-2" for="job-city">City</label>
+                                    <input type="text" class="form-control" id="job-city">
+                                </div>
+                                <div class="col-sm-6 col-lg-3 form-group">
+                                    <label class="mr-2" for="job-state">State</label>
+                                    <input type="text" class="form-control" id="job-state">
+                                </div>
+                                <div class="col-sm-6 col-lg-3 form-group">
+                                    <label class="mr-2" for="job-zip-code">ZIP Code</label>
+                                    <input type="text" class="form-control" id="job-zip-code">
+                                </div>
+                            </div>
+                            <div class="form-row mt-3">
+                                <div class="col-sm-4 form-group">
+                                    <label class="mr-2" for="job-title">Job Title* </label>
+                                    <input type="text" class="form-control" id="job-title">
+                                </div>
+                                <div class="col-sm-4 form-group">
+                                    <label class="mr-2" for="job-responsibilities">Responsibilities* </label>
+                                    <input type="text" class="form-control" id="job-responsibilities">
+                                </div>
+                            </div>
+                            <div class="form-row mt-3">
+                                <div class="col-sm-4 form-group">
+                                    <label class="mr-2" for="job-from">from </label>
+                                    <input type="date" class="form-control" id="job-from">
+                                </div>
+                                <div class="col-sm-4 form-group">
+                                    <label class="mr-2" for="job-to">to </label>
+                                    <input type="date" class="form-control" id="job-to">
+                                </div>
+                            </div>
+                            <div class="form-row mt-3">
+                                <div class="col-sm-8 form-group">
+                                    <label class="mr-2" for="job-leave">Reason for leaving: </label>
+                                    <textarea class="form-control" id="job-leave"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-row mt-3">
+                                <p class="mr-3">May we contact your supervisor for a reference?* </p>
+                                <div class="col-sm-8 form-group form-row">
+                                    <div class="form-check form-check-inline">
+                                        <input checked type="radio" class="form-check-input"
+                                               name="job-contact-radios" id="job-contact-yes">
+                                        <label class="form-check-label" for="job-contact-yes">Yes </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input"
+                                               name="job-contact-radios" id="job-contact-no">
+                                        <label class="form-check-label" for="job-contact-no">No </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--====================== third page ==========================-->
+                <div class="row tab">
+                    <div class="col-md col-xl-10">
+                        <div class="form-group">
+                            <h2>Teaching Information</h2>
+                        </div>
+                        <div class="ml-3">
+                            <div class="form-row">
+                                <div class="col-md-6 pr-5">
+                                    <div class="form-group">
+                                        <label for="musical-experience">Musical Experience*</label>
+                                        <textarea id="musical-experience" class="form-control"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="teaching-experience">Teaching Experience or Style*</label>
+                                        <textarea id="teaching-experience" class="form-control"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="primary-instruments">Primary Instrument(s) you teach:* </label>
+                                        <input type="text" id="primary-instruments" class="form-control"
+                                               placeholder="Keyboards - Drums -etc">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="start-teaching">When did you First start teaching?* </label>
+                                        <input type="text" id="start-teaching" class="form-control">
+                                    </div>
+                                </div>
+                                <ul class="col-md-6 pl-3">
+                                    <li class="my-5">
+                                        <p>Check which levels you feel comfortable teaching* </p>
+                                        <div class="ml-3">
+                                            <div class="form-check form-check-inline">
+                                                <input checked type="checkbox" class="form-check-input"
+                                                       id="beginner">
+                                                <label class="form-check-label" for="beginner">Beginner </label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input type="checkbox" class="form-check-input"
+                                                       id="intermediate">
+                                                <label class="form-check-label" for="intermediate">Intermediate </label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input type="checkbox" class="form-check-input"
+                                                       id="advanced">
+                                                <label class="form-check-label" for="advanced">Advanced </label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mb-5">
+                                        <p>Check which style(s) you qualified to teach:* </p>
+                                        <div class="ml-3">
+                                            <div class="form-row form-group">
+                                                <div class="col form-check form-check-inline">
+                                                    <input checked type="checkbox" class="form-check-input"
+                                                           id="classical">
+                                                    <label class="form-check-label" for="classical">Classical </label>
+                                                </div>
+                                                <div class="col form-check form-check-inline">
+                                                    <input type="checkbox" class="form-check-input" id="pop">
+                                                    <label class="form-check-label" for="pop">Pop </label>
+                                                </div>
+                                                <div class="col form-check form-check-inline">
+                                                    <input type="checkbox" class="form-check-input" id="jazz">
+                                                    <label class="form-check-label" for="jazz">Jazz </label>
+                                                </div>
+
+                                            </div>
+                                            <div class="form-row form-group">
+                                                <div class="col form-check form-check-inline">
+                                                    <input type="checkbox" class="form-check-input" id="blues">
+                                                    <label class="form-check-label" for="blues">Blues </label>
+                                                </div>
+                                                <div class="col form-check form-check-inline">
+                                                    <input type="checkbox" class="form-check-input" id="ethnic">
+                                                    <label class="form-check-label" for="ethnic">Ethnic </label>
+                                                </div>
+                                                <div class="col form-check form-check-inline">
+                                                    <input type="checkbox" class="form-check-input" id="folk">
+                                                    <label class="form-check-label" for="folk">Folk </label>
+                                                </div>
+
+                                            </div>
+                                            <div class="form-row form-group">
+                                                <div class="col form-check form-check-inline">
+                                                    <input type="checkbox" class="form-check-input" id="country-style">
+                                                    <label class="form-check-label" for="country-style">Country </label>
+                                                </div>
+                                                <div class="col form-check form-check-inline">
+                                                    <input type="checkbox" class="form-check-input" id="other">
+                                                    <label class="form-check-label" for="other">Other </label>
+                                                </div>
+                                                <div class="col form-check form-check-inline"></div>
+                                            </div>
+                                            <input type="text" class="form-control form-group"
+                                                   placeholder="type other styles">
+                                        </div>
+                                    </li>
+                                    <li class="mb-5">
+                                        <p>Check which age(s) you feel comfortable teaching:* </p>
+                                        <div class="ml-3">
+                                            <div class="form-row form-group">
+                                                <div class="col form-check form-check-inline">
+                                                    <input type="checkbox" class="form-check-input" id="preschoolers">
+                                                    <label class="form-check-label" for="preschoolers">5-7 </label>
+                                                </div>
+                                                <div class="col form-check form-check-inline">
+                                                    <input type="checkbox" class="form-check-input"
+                                                           id="middle-childhood ">
+                                                    <label class="form-check-label" for="middle-childhood ">7-9 </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-row form-group">
+                                                <div class="col form-check form-check-inline">
+                                                    <input type="checkbox" class="form-check-input" id="teen">
+                                                    <label class="form-check-label" for="teen">Teen </label>
+                                                </div>
+                                                <div class="col form-check form-check-inline">
+                                                    <input type="checkbox" class="form-check-input" id="adult">
+                                                    <label class="form-check-label" for="adult">Adult </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="pl-0">
+                                <li>
+                                    <p>Enter which languages you feel comfortable teaching:* </p>
+                                    <div class="form-row">
+                                        <div class="col-sm-5 mr-2 form-row">
+                                            <label for="first-language">first language</label>
+                                            <input type="text" id="first-language" class="form-control">
+                                        </div>
+                                        <div class="col-sm-5 mr-2 form-row">
+                                            <label for="second-language">second language</label>
+                                            <input type="text" id="second-language" class="form-control">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mt-5">
+                                    <p>Do you have a preference in Music Method/Repertoires Books? </p>
+                                    <div class="form-row form-group">
+                                        <div class="form-check form-check-inline">
+                                            <input type="checkbox" class="form-check-input" id="has-preference">
+                                            <label class="form-check-label" for="has-preference">Yes</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input type="checkbox" class="form-check-input" id="no-preference">
+                                            <label class="form-check-label" for="no-preference">No</label>
+                                        </div>
+                                    </div>
+                                    <label for="prefernce">If yes, please explain</label>
+                                    <textarea id="prefernce" class="form-control col-md-6"></textarea>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!--====================== fourth page ==========================-->
+                <div class="row tab">
+                    <div class="col-md col-xl-10">
+                        <h2 class="form-group">Availability</h2>
+                        <div class="ml-3">
+                            <p>What days and times are you available to teach?*</p>
+                            <ul class="form-row">
+                                <li class="col-md-6 mb-3">
+                                    <h5>Days</h5>
+                                    <div class="ml-2">
+                                        <div class="form-row form-group">
+                                            <div class="col form-check form-check-inline">
+                                                <input type="checkbox" class="form-check-input" id="monday">
+                                                <label class="form-check-label" for="monday">Monday </label>
+                                            </div>
+                                            <div class="col form-check form-check-inline">
+                                                <input type="checkbox" class="form-check-input" id="tuesday">
+                                                <label class="form-check-label" for="tuesday">Tuesday </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-row form-group">
+                                            <div class="col form-check form-check-inline">
+                                                <input type="checkbox" class="form-check-input" id="wednesday">
+                                                <label class="form-check-label" for="wednesday">Wednesday </label>
+                                            </div>
+                                            <div class="col form-check form-check-inline">
+                                                <input type="checkbox" class="form-check-input" id="thursday">
+                                                <label class="form-check-label" for="thursday">Thursday </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-row form-group">
+                                            <div class="col form-check form-check-inline">
+                                                <input type="checkbox" class="form-check-input" id="friday">
+                                                <label class="form-check-label" for="friday">Friday </label>
+                                            </div>
+                                            <div class="col form-check form-check-inline">
+                                                <input type="checkbox" class="form-check-input" id="saturday">
+                                                <label class="form-check-label" for="saturday">Saturday </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-row form-group">
+                                            <div class="col form-check form-check-inline">
+                                                <input type="checkbox" class="form-check-input" id="sunday">
+                                                <label class="form-check-label" for="sunday">Sunday </label>
+                                            </div>
+                                            <div class="col form-check form-check-inline">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-6 mb-3">
+                                    <h5>Times</h5>
+                                    <div class="ml-2">
+                                        <div class="form-row form-group">
+                                            <div class="col form-check form-check-inline">
+                                                <input type="checkbox" class="form-check-input" id="mornings">
+                                                <label class="form-check-label" for="mornings">Mornings </label>
+                                            </div>
+                                            <div class="col form-check form-check-inline">
+                                                <input type="checkbox" class="form-check-input" id="after-noon">
+                                                <label class="form-check-label" for="after-noon">Afternoons </label>
+                                            </div>
+                                            <div class="col form-check form-check-inline">
+                                                <input type="checkbox" class="form-check-input" id="nights">
+                                                <label class="form-check-label" for="nights">Nights </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <h2 class="mt-5 form-group">Interest </h2>
+                        <div class="ml-3">
+                            <p>Why do you want to work with Farabius music? </p>
+                            <textarea class="form-control col-sm-7"></textarea>
+                            <p class="mt-3">Why are you a ﬁt for this role? </p>
+                            <textarea class="form-control col-sm-7"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!--====================== fifth page ==========================-->
+                <div class="row tab">
+                    <div class="col-md col-xl-10">
+                        <h2 class="form-group">Policies </h2>
+                        <div class="ml-3">
+                            <div class="form-group">
+                                <p>Are you willing to follow Farabius Academy of Music’s Policies and
+                                    Procedures?* </p>
+                                <div class="form-row form-group ml-2">
+                                    <div class="form-check form-check-inline">
+                                        <input type="checkbox" class="form-check-input" id="follow-policies">
+                                        <label class="form-check-label" for="follow-policies">Yes</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="checkbox" class="form-check-input" id="no-follow-policies">
+                                        <label class="form-check-label" for="no-follow-policies">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mt-4">
+                                <div class="ml-3 mb-3">
+                                    <input type="checkbox" class="form-check-input" id="read-policies">
+                                    <label class="form-check-label" for="read-policies">I have read the Paris
+                                        Academy of
+                                        Music’s <a href="#">Policies</a> and Procedures and the Teacher Performance
+                                        Guide) </label>
+                                </div>
+                                <div class="ml-3">
+                                    <input type="checkbox" class="form-check-input" id="true-info">
+                                    <label class="form-check-label" for="true-info">I certify that my answers are true and complete to the best of my knowledge. If this
+                                        application leads to association, I understand that false or misleading information in
+                                        my application or interview may result in my release.</label>
+                                </div>
+
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6 pr-md-5">
+                                    <div class="mt-5 mb-4">
+                                        <p>Please include a copy of your resume and a short bio</p>
+                                        <div class="ml-2">
+                                            <p>Biography </p>
+                                            <textarea class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="ml-2 mb-4">
+                                        <p>Please upload your resume:*</p>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input">
+                                            <label class="custom-file-label">Browse</label>
+                                        </div>
+                                    </div>
+                                    <div class="ml-2 mb-5">
+                                        <p>Please upload one of your Performance: </p>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input">
+                                            <label class="custom-file-label">Browse</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 pl-md-5">
+                                    <div class="ml-2 mt-5 form-row form-group">
+                                        <label class="col-sm-3 col-md-4" for="video-link">Teaching video link: </label>
+                                        <div style="flex: 1">
+                                            <input type="text" id="video-link" class="form-control" value="https://">
+                                        </div>
+                                    </div>
+                                    <div class="ml-2 mt-3 form-row form-group">
+                                        <label class="col-sm-3 col-md-4" for="website-link">Website: </label>
+                                        <div style="flex: 1">
+                                            <input type="text" id="website-link" class="form-control" value="https://">
+                                        </div>
+                                    </div>
+                                    <div class="ml-2 mt-5 form-group">
+                                        <label for="how-you-found-us">How did you hear about us? </label>
+                                        <textarea id="how-you-found-us" class="form-control">
+                                        </textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+
+
+            <!--======================== page footer ======================== -->
+            <div class="form-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <button id="prevBtn" type="submit" onclick="nextPrev(-1)"
+                                    class="form-action-button previous action-button">Previous
+                            </button>
+                        </div>
+                        <div class="col">
+                            <button id="nextBtn" onclick="nextPrev(1)"
+                                    class="form-action-button next-btn  next action-button">Next
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+
+</html>

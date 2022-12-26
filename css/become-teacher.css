@@ -1,0 +1,215 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    color: #29303b;
+}
+
+* {
+    box-sizing: border-box;
+}
+.invalid {
+    border: solid 2px #fdbdbd !important;
+}
+
+.full-page-form {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    overflow: auto;
+}
+
+.full-page-form > div {
+    min-width: 230px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.form-header {
+    display: flex;
+    height: 60px;
+    align-items: center;
+}
+
+.form-header img {
+    width: 60px;
+    margin-left: 10px;
+}
+
+.devider {
+    align-self: stretch;
+    border-right: 1px solid #dedfe0;
+    margin-left: 20px;
+}
+
+.step-number {
+    color: #686f7a;
+    flex: 1 1;
+    padding: 0 30px;
+    font-size: 18px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.exit-button {
+    padding-right: 17px;
+    margin-left: auto;
+}
+
+.exit-button button {
+    border: none;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #8763b9;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    padding: 9px 10px;
+    font-size: 15px;
+    line-height: 1.35135;
+}
+
+.exit-button button:hover {
+    background-color: #e2e2e2;
+}
+
+.page-progress-container {
+    background: #e8e9eb;
+    height: 6px;
+    overflow-x: hidden;
+}
+
+.progress{
+    width: 20%;
+    background: #8a92a3;
+    box-sizing: content-box;
+    border-radius: 0 3px 3px 0;
+    height: 100%;
+    padding-right: 3px;
+    transition: .6s ease-out;
+}
+
+.form-content {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 500px) {
+    .form-content {
+        padding: 0 15px;
+    }
+}
+
+.contact-info div {
+    margin: 10px 7px;
+
+}
+
+.form-footer {
+    border-top: 1px solid #dedfe0;
+    padding: 15px 0;
+}
+
+
+.form-action-button {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    background-color: transparent;
+    border-color: #8763b9;
+    color: #7c4bc0;
+    padding: 11px 12px;
+    font-size: 15px;
+    line-height: 1.35135;
+    border-radius: 2px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.form-action-button:hover {
+    background-color: #7c4bc0;
+    color: #fff;
+    transition: background-color 0.7, color 0.4;
+}
+
+.tab {
+    display: none
+}
+
+.next-btn {
+    float: right;
+}
+
+.high-school-field {
+    margin-right: 7px;
+}
+
+@media (max-width: 768px) {
+    .high-school-field {
+        margin: 10px 0;
+    }
+}
+
+.graduate-fields {
+    border: solid 1px #c2c2c2;
+    border-radius: 3px;
+}
+
+@media (min-width: 991px) {
+    .graduate-high-school {
+        margin-left: 15px;
+    }
+}
+/*@media (min-width: 768px) {*/
+/*    .graduate-high-school {*/
+/*        margin-left: 15px;*/
+/*    }*/
+/*}*/
+
+.graduate-high-school {
+    padding-left: 5px;
+    margin: 7px 0;
+}
+.inline {
+    display: inline-block;
+}
+.ref-number{
+    border-radius: 50px;
+    border: solid 1px #c2c2c2;
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    padding: 4px 12px;
+}
+#musical-experience, #teaching-experience{
+    height: 100px;
+}
+
+
+
+
+
+
+
